@@ -1,0 +1,137 @@
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+@media (min-width: 1024px) {
+  .navbar {
+    max-height: 10vh;
+  }
+  .flag {
+    max-height: 100%;
+  }
+}
+
+body {
+  margin: 0;
+}
+
+h3,
+h2,
+h1 {
+  color: #b91c1c;
+}
+.flag {
+  max-width: 20%;
+}
+
+.logo {
+  display: flex;
+  gap: 10%;
+  align-items: center;
+}
+
+.logo-text {
+  font-size: 2rem;
+}
+
+.navbar {
+  padding-bottom: 1rem;
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 1px solid #dc2626;
+  background-color: #e7e5e4;
+  background: linear-gradient(#fafafa, #fee2e2);
+}
+
+.nav-links {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  font-weight: bold;
+  padding-right: 3rem;
+}
+
+a {
+  text-decoration: none;
+}
+a:hover,
+a:visited {
+  color: #b91c1c;
+}
+a:visited {
+  text-decoration: none;
+}
+
+.turquie-photo {
+  max-width: 500px;
+  margin: 4rem;
+  padding-top: 3rem;
+}
+
+.about {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.geo-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  align-items: center;
+  gap: 2rem;
+}
+
+.geo-content > img {
+  grid-area: 1 / 2 / 2 / 3;
+}
+
+.geo-content > div {
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.geo-img {
+  max-width: 40vw;
+}
+
+.politique-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+}
+
+.politique-img > img {
+  display: flex;
+  max-width: 30vw;
+  padding: 1rem;
+}
+
+.politique-img > p {
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+}
+
+.politique-img {
+  grid-area: 1 / 1 / 2 / 2;
+  display: grid;
+  justify-content: center;
+  margin-right: 3rem;
+}
+
+.politique-text {
+  grid-area: 1 / 2 / 2 / 3;
+}
+
+.main-content-section {
+  margin-top: 4rem;
+}
+
+article,
+.about {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
