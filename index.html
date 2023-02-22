@@ -15,59 +15,44 @@
   </head>
   <body>
     <header class="navbar">
-      <div class="logo">
+      <div class="navbar-left">
         <img
-          class="flag"
-          src="/assets/Flag-Turkey.svg.png"
+          class="drapeau"
+          src="./assets/Flag-Turkey.svg.png"
           alt="Drapeau de la Turquie"
         />
-        <h1 class="logo-text">Turquie</h1>
+        <p class="turquie-title">Turquie</p>
       </div>
-      <div class="nav-links">
-        <p>
-          <a target="_blank" href="https://tr.ambafrance.org/"> Ambassade </a>
-        </p>
-        <p>
-          <a target="_blank" href="https://turquietourisme.ktb.gov.tr/"
-            >Tourisme</a
-          >
-        </p>
-        <p>
-          <a target="_blank" href="https://www.turkishairlines.com/">
-            Billets d'avion
-          </a>
-        </p>
+      <div class="navbar-right">
+        <p>About</p>
+        <p>Géographie</p>
+        <p>Politique</p>
+        <p>Histoire</p>
       </div>
     </header>
-    <main class="main-content">
-      <div class="about">
+    <main>
+      <div class="presentation">
         <img
-          class="turquie-photo"
-          src="./assets/Turquie.jpg"
-          alt="Photo d'une ville en Turquie"
+          class="drapeau-turquie"
+          src="./assets/Flag-Turkey.svg.png"
+          alt="Photo d'un lieu en Turquie"
+          width="1000px"
         />
-        <div>
-          <h2>Présentation</h2>
+        <div class="presentation-text">
+          <h1>Bienvenue !</h1>
           <p>
-            La Turquie, en forme longue la république de Turquie, en turc :
-            Türkiye et Türkiye Cumhuriyeti prononciation, est un pays
-            transcontinental situé aux confins de l'Asie et de l'Europe.
+            La Turquie est un pays transcontinental situé aux confins de l'Asie
+            et de l'Europe habité par 85 millions de personnes.
           </p>
         </div>
       </div>
       <article>
-        <h2>À propos</h2>
-        <div class="main-content-section" class="geo">
-          <h3>Géographie</h3>
-          <div class="geo-content">
-            <img
-              class="geo-img"
-              src="./assets/Carte-Turquie.png"
-              alt="Position de la Turquie sur une carte"
-            />
+        <div class="geo">
+          <div class="geo-text">
+            <h2>Géographie</h2>
             <div>
               <p>
-                Elle a des frontières avec la Grèce et la Bulgarie à
+                La Turquie a des frontières avec la Grèce et la Bulgarie à
                 l'ouest-nord-ouest, la Géorgie et l'Arménie à l'est-nord-est,
                 l'Azerbaïdjan (Nakhitchevan) et l'Iran à l'est, l'Irak
                 (Gouvernement régional du Kurdistan) et la Syrie à
@@ -82,71 +67,123 @@
               </p>
             </div>
           </div>
-        </div>
-        <div class="main-content-section" class="histoire">
-          <h3>Histoire</h3>
-          <p>
-            La péninsule anatolienne (ou Asie Mineure), qui représente
-            aujourd'hui 97 % de la Turquie moderne, compte parmi les régions du
-            globe qui ont continuellement été habitées tout au long de
-            l'histoire de l'humanité.
-          </p>
-          <p>
-            Le premier empire à émerger en Anatolie a sans nul doute été
-            l'Empire hittite, du xviiie au xiiie siècle av. J.-C. Par la suite,
-            les Phrygiens, un autre peuple indo-européen, ont gouverné ces
-            terres jusqu'à leur anéantissement par les Cimmériens au viie siècle
-            av. J.-C. D'autres peuples indo-européens se sont succédé en
-            Anatolie, dont les Lydiens et les Lyciens.
-          </p>
-        </div>
-        <div class="main-content-section" class="politique">
-          <div>
-            <div class="politique-content">
-              <div class="politique-img">
-                <img
-                  src="./assets/assemblee.jpeg"
-                  alt="Photo de l'assemblée turque"
-                />
 
-                <p>Portait du président Erdoğan</p>
-              </div>
-              <div class="politique-text">
-                <h3>Politique</h3>
-                <p>La Turquie est une république de type présidentiel.</p>
-                <p>
-                  La constitution en vigueur date de 1982. Elle a été plusieurs
-                  fois modifiée, en particulier à la suite du référendum du 12
-                  septembre 2010 et du référendum du 17 avril 2017.
-                </p>
-                <p>
-                  Le président de la République est chef de l’État et chef du
-                  gouvernement. Élu par le Parlement jusqu'en 2007, il l'est
-                  aujourd'hui au suffrage universel et pour un mandat de cinq
-                  ans. Le président de la République choisit le(s)
-                  vice-président(s) et nomme les hauts fonctionnaires du pouvoir
-                  judiciaire ; il est aussi chef des armées. Le poste de Premier
-                  Ministre a été supprimé le 8 juillet 2018.
-                </p>
-                <p>
-                  Le pouvoir législatif est exercé par la Grande Assemblée
-                  nationale de Turquie désormais composée de 600 sièges
-                  renouvelés tous les cinq ans.
-                </p>
-              </div>
+          <img
+            class="turquie-map"
+            src="./assets/Carte-Turquie.png"
+            width="1000px"
+            alt="La Turquie sur une carte"
+          />
+        </div>
+        <div class="histoire">
+          <div class="histoire-text">
+            <h2>Histoire</h2>
+            <div>
+              <p>
+                La péninsule anatolienne (ou Asie Mineure), qui représente
+                aujourd'hui 97 % de la Turquie moderne, compte parmi les régions
+                du globe qui ont continuellement été habitées tout au long de
+                l'histoire de l'humanité.
+              </p>
+              <p>
+                Le premier empire à émerger en Anatolie a sans nul doute été
+                l'Empire hittite, du xviiie au xiiie siècle av. J.-C. Par la
+                suite, les Phrygiens, un autre peuple indo-européen, ont
+                gouverné ces terres jusqu'à leur anéantissement par les
+                Cimmériens au viie siècle av. J.-C. D'autres peuples
+                indo-européens se sont succédé en Anatolie, dont les Lydiens et
+                les Lyciens.
+              </p>
             </div>
           </div>
-
-          <div class="main-content-section" class="president-list">
-            <h4>Les derniers présidents turcs</h4>
-            <ul>
-              <li>Recep Tayyip Erdoğan (2014-Aujourd'hui)</li>
-              <li>Abdullah Gül (2007-2014)</li>
-              <li>Ahmet Necdet Sezer (2000-2007)</li>
-            </ul>
+          <img
+            class="turquie-img"
+            src="./assets/Turquie.jpg"
+            alt="Drapeau de la Turquie"
+            width="600px"
+          />
+        </div>
+        <div class="politique">
+          <div class="politique-text">
+            <h2>Politique</h2>
+            <div>
+              <p>La Turquie est une république de type présidentiel.</p>
+              <p>
+                La constitution en vigueur date de 1982. Elle a été plusieurs
+                fois modifiée, en particulier à la suite du référendum du 12
+                septembre 2010 et du référendum du 17 avril 2017.
+              </p>
+              <p>
+                Le président de la République est chef de l’État et chef du
+                gouvernement. Élu par le Parlement jusqu'en 2007, il l'est
+                aujourd'hui au suffrage universel et pour un mandat de cinq ans.
+                Le président de la République choisit le(s) vice-président(s) et
+                nomme les hauts fonctionnaires du pouvoir judiciaire ; il est
+                aussi chef des armées. Le poste de Premier Ministre a été
+                supprimé le 8 juillet 2018.
+              </p>
+              <p>
+                Le pouvoir législatif est exercé par la Grande Assemblée
+                nationale de Turquie désormais composée de 600 sièges renouvelés
+                tous les cinq ans.
+              </p>
+            </div>
           </div>
+          <img
+            class="politique-img"
+            src="./assets/assemblee.jpeg"
+            width="1000px"
+            alt="La Turquie sur une carte"
+          />
         </div>
       </article>
     </main>
+    <section class="media">
+      <figure>
+        <figcaption>Hymne nationale turque:</figcaption>
+        <audio controls src="./assets/IstiklalMarsi-2013_(version_2).oga">
+          <a href="./assets/IstiklalMarsi-2013_(version_2).oga">
+            Download audio
+          </a>
+        </audio>
+      </figure>
+      <div class="video">
+        <iframe
+          width="100%"
+          height="100%"
+          src="https://www.youtube.com/embed/2vqvBzb0xJY"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </section>
+    <footer>
+      <div>
+        <p>Liens utiles</p>
+        <p>Mentions légales</p>
+        <p>Politique de confidentialité</p>
+      </div>
+      <div>
+        <p>Nous contacter</p>
+        <p>Gestion des cookies</p>
+        <p>Plan du site</p>
+      </div>
+      <div>
+        <a class="nav-link" target="_blank" href="https://tr.ambafrance.org/"
+          >Ambassade</a
+        >
+        <a class="nav-link" target="_blank" href="https://www.istanbul.fr/"
+          >Tourisme</a
+        >
+        <a
+          class="nav-link"
+          target="_blank"
+          href="https://www.turkishairlines.com/"
+          >Voyage</a
+        >
+      </div>
+    </footer>
   </body>
 </html>
