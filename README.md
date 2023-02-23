@@ -2,12 +2,13 @@ Brief 1: Pays
 
 Quelques points sur le projet:
 
-- J'ai tenté d'implémenter des mesures responsives, cependant, le layout casse sur
-  un affichage plus petit.
+- J'ai tenté d'implémenter un layout responsive
 
-- La barre de navigation a un scroll intégré
+- La barre de navigation a un scroll intégré mais marche à moitié.
 
 - La plupart des liens dans le footer redirigent vers des pages simples que j'ai ajouté sauf les trois liens en bas à droite qui redirigent vers des vrais sites externes.
+
+- Beaucoup de répétitions dans le css. Il faut que je regroupe les elements ayant les mêmes attributs style ou ceux qui ne changent pas sur plusieurs tailles d'écran.
 
 Pour les ressources:
 
