@@ -1,35 +1,47 @@
-function defineScroll(elementClass, contentClass) {
-  const section = document.querySelector(`.${elementClass}`);
-  const content = document.querySelector(`.${contentClass}`);
-  const navbar = document.querySelector(".navbar");
-  console.log(navbar);
-  console.log(navbar.offsetWidth);
-  console.log(navbar.offsetHeight);
+"use strict";
 
-  console.log(section);
-  console.log(content);
+const geo = document.querySelector(".geo");
+console.log(geo.getBoundingClientRect().top);
+const navbar = document.querySelector(".navbar");
 
-  section.addEventListener("click", function () {
-    console.log(content.getBoundingClientRect().y);
-    scrollTo(
-      content.getBoundingClientRect().x,
-      content.getBoundingClientRect().y - navbar.offsetHeight - 50
-    );
-  });
-}
+const navbarGeo = document.querySelector(".nav-geo");
+navbarGeo.addEventListener("click", () => {
+  let geoViewportY = geo.getBoundingClientRect().top;
+  let currentScroll = window.pageYOffset;
+  window.scroll(0, geoViewportY + currentScroll - navbar.offsetHeight);
+});
 
-defineScroll("nav-about", "presentation");
-defineScroll("nav-geo", "geo");
-defineScroll("nav-politique", "politique");
-defineScroll("nav-histoire", "histoire");
+const histoire = document.querySelector(".histoire");
+console.log(histoire.getBoundingClientRect().top);
 
-/*
- Element.getBoundingClientRect().top retourne la distance entre l'element
- et le haut du viewport
- Window.pageYOffset retourne la distance en pixels qui a été scrollé
- entre le haut du document et le début du viewport 
+const navbarHistoire = document.querySelector(".nav-histoire");
+navbarHistoire.addEventListener("click", () => {
+  let histoireViewportY = histoire.getBoundingClientRect().top;
+  let currentScroll = window.pageYOffset;
+  window.scroll(0, histoireViewportY + currentScroll - navbar.offsetHeight);
+});
 
- La distance a scroller verticalement sur le click = 
- Element.getBoundingClientRect().top +  Window.pageYOffset
+const politique = document.querySelector(".politique");
+console.log(politique.getBoundingClientRect().top);
 
-*/
+const navbarPolitique = document.querySelector(".nav-politique");
+navbarPolitique.addEventListener("click", () => {
+  let politiqueViewportY = politique.getBoundingClientRect().top;
+  let currentScroll = window.pageYOffset;
+  window.scroll(0, politiqueViewportY + currentScroll - navbar.offsetHeight);
+});
+
+const presentation = document.querySelector(".presentation-text");
+console.log(presentation.getBoundingClientRect().top);
+
+const navbarPresentation = document.querySelector(".nav-about");
+navbarPresentation.addEventListener("click", () => {
+  let presentationViewportY = presentation.getBoundingClientRect().top;
+  let currentScroll = window.pageYOffset;
+  window.scroll(0, presentationViewportY + currentScroll - navbar.offsetHeight);
+});
+
+const drapeau = document.querySelector(".drapeau");
+drapeau.addEventListener("click", () => {
+  window.scroll(0, 0);
+});
