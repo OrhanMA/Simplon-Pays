@@ -1,16 +1,14 @@
-Brief 1: Pays
+Brief 1: Présenter un pays
 
 Lien vers la DEMO: https://simplon-pays.netlify.app
 
 Quelques points sur le projet:
 
-- J'ai tenté d'implémenter un layout responsive
+- Responsive layout
 
-- La barre de navigation a un scroll intégré mais marche à moitié.
+- Fonctionnalité de scroll pour les élements de la barre de navigation (drapeau inclus).
 
-- La plupart des liens dans le footer redirigent vers des pages simples que j'ai ajouté sauf les trois liens en bas à droite qui redirigent vers des vrais sites externes.
-
-- Beaucoup de répétitions dans le CSS (je voulais juste faire marcher mon layout). Il faut que je regroupe les elements ayant les mêmes attributs style ou ceux qui ne changent pas sur plusieurs tailles d'écran.
+- Footer avec liens de redirection vers une autre page et/ou un autre site.
 
 Ressources:
 
