@@ -2,6 +2,7 @@
   font-family: "Roboto", sans-serif;
   padding: 0;
   margin: 0;
+  scroll-behavior: smooth;
 }
 
 a:link,
@@ -11,20 +12,23 @@ a:visited {
 }
 
 .navbar {
-  height: 10vh;
+  /*height: 10vh;*/
   width: 100vw;
-  background-color: #292524;
-  color: white;
+  border-bottom: solid 2px red;
+  color: black;
+  background-color: white;
+  position: fixed;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  position: fixed;
+  /* position: fixed;*/
   top: 0;
   gap: 25%;
 }
 .drapeau {
   width: 100px;
   height: auto;
+  padding: 10px;
 }
 
 .navbar-left,
@@ -121,7 +125,7 @@ p {
 }
 
 .histoire-text > h2 {
-  color: black;
+  color: white;
 }
 .histoire-text {
   color: white;
@@ -136,8 +140,8 @@ p {
 }
 
 .video {
-  width: 50vw;
-  height: 55vh;
+  width: auto;
+  height: auto;
 }
 
 footer {
@@ -153,4 +157,5 @@ footer > div {
   display: flex;
   flex-direction: column;
   color: white;
+  gap: 20px;
 }
